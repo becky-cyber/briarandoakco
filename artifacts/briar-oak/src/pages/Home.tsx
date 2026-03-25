@@ -377,7 +377,7 @@ export default function Home() {
           </div>
 
           <div className="text-[10px] text-foreground/40 uppercase tracking-widest border-t border-border pt-8">
-            © {new Date().getFullYear()} Celebrate Magnolia LLC. All Rights Reserved.
+            © {new Date().getFullYear()} Briar & Oak Co. LLC. All Rights Reserved.
           </div>
         </div>
       </footer>
