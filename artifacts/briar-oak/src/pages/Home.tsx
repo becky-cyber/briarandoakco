@@ -262,7 +262,7 @@ export default function Home() {
             className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-background shadow-lg"
           >
             <img 
-              src={`${import.meta.env.BASE_URL}images/becky-portrait.png`}
+              src={`${import.meta.env.BASE_URL}images/becky-portrait.jpg`}
               alt="Becky, owner of Briar & Oak" 
               className="w-full h-full object-cover"
             />
