@@ -1,0 +1,16 @@
+packages:
+  "framer-motion": "For elegant page transitions and scroll-triggered animations to enhance the premium boutique feel"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod schema validation integration with react-hook-form"
+
+images:
+  - path: "artifacts/briar-oak/public/images/warm-candid-gathering.png"
+    description: "Warm, candid photography of a beautifully styled outdoor dinner party with a rustic wooden table, glowing string lights, and floral centerpieces in a Texas hill country setting, soft golden hour lighting, organic and cinematic."
+    aspect_ratio: "3:4"
+  - path: "artifacts/briar-oak/public/images/becky-portrait.png"
+    description: "Warm, approachable lifestyle portrait of a female event planner in a blooming garden setting, smiling gently, wearing natural earthy tones, softly blurred background, professional yet relaxed."
+    aspect_ratio: "1:1"
+
+notes:
+  - The contact form submits data to the POST /api/inquiries endpoint using the pre-generated useSubmitInquiry hook from @workspace/api-client-react.
+  - The site is a single page application with smooth scrolling navigation.

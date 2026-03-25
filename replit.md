@@ -48,6 +48,17 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Artifacts
+
+### `artifacts/briar-oak` (`@workspace/briar-oak`)
+
+Briar & Oak Co. — event planning studio website. React + Vite frontend served at `/`. Features:
+- Full landing page: hero, about, services/packages, meet Becky bio, contact form, footer
+- Contact form submits to `POST /api/inquiries` and stores in PostgreSQL
+- Brand fonts: Cormorant Garamond (serif) + Jost (sans-serif)
+- AI-generated images for the about section and Becky portrait
+- Animated with Framer Motion; form managed by react-hook-form + Zod
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)

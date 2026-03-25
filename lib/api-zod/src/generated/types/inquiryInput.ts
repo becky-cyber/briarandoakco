@@ -5,9 +5,6 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-export interface HealthStatus {
-  status: string;
-}
 
 export interface InquiryInput {
   firstName: string;
@@ -16,13 +13,4 @@ export interface InquiryInput {
   eventType: string;
   guestCount?: string;
   vibe?: string;
-}
-
-export interface InquiryResponse {
-  id: number;
-  message: string;
-}
-
-export interface ErrorResponse {
-  error: string;
 }
