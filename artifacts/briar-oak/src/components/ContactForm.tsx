@@ -12,10 +12,10 @@ export function ContactForm() {
           href={HONEYBOOK_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full bg-accent text-accent-foreground py-4 text-center uppercase font-bold tracking-widest hover:bg-primary transition-colors duration-300 group/btn"
+          className="w-full bg-accent text-accent-foreground py-4 mt-4 uppercase font-bold tracking-widest hover:bg-primary transition-colors duration-300 disabled:opacity-70 flex items-center justify-center gap-2 group"
         >
           Send My Inquiry
-          <span className="inline-block ml-2 opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all duration-300">→</span>
+          <span className="inline-block opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">→</span>
         </a>
         <p className="text-[11px] uppercase text-center text-secondary tracking-widest opacity-70">
           We'll respond within 1–2 business days
