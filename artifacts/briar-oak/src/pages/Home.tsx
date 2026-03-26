@@ -81,12 +81,14 @@ export default function Home() {
             >
               Explore Packages
             </button>
-            <button 
-              onClick={scrollTo("contact")}
+            <a
+              href="https://briarandoakco.hbportal.co/public/69c4489698c3e1003040eea1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-8 py-3.5 hover:bg-primary/90 hover:shadow-lg transition-all duration-300 font-semibold tracking-wide text-sm uppercase rounded-sm hover:-translate-y-0.5"
             >
               Book a Free Consult
-            </button>
+            </a>
           </motion.div>
         </div>
       </main>

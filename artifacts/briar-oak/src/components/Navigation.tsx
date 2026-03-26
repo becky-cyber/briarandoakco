@@ -60,12 +60,14 @@ export function Navigation() {
           </a>
         </div>
 
-        <button 
-          onClick={scrollTo("contact")}
+        <a
+          href="https://briarandoakco.hbportal.co/public/69c4489698c3e1003040eea1"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-accent text-accent-foreground px-6 py-2.5 rounded-sm hover:bg-primary hover:-translate-y-0.5 transition-all duration-300 text-sm font-bold uppercase tracking-widest shadow-md hover:shadow-lg"
         >
           Let's Talk
-        </button>
+        </a>
       </div>
     </motion.nav>
   );
