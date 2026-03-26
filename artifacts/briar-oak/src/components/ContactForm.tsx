@@ -16,7 +16,7 @@ export function ContactForm() {
         >
           Start My Inquiry
         </a>
-        <p className="text-[11px] uppercase text-center text-secondary tracking-widest opacity-70">
+        <p className="text-[11px] uppercase text-center text-secondary tracking-widest mt-6 opacity-70">
           We'll respond within 1–2 business days
         </p>
       </div>
