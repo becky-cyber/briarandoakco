@@ -15,7 +15,6 @@ export function ContactForm() {
           className="w-full bg-accent text-accent-foreground py-4 mt-4 uppercase font-bold tracking-widest hover:bg-primary transition-colors duration-300 disabled:opacity-70 flex items-center justify-center gap-2 group"
         >
           Start My Inquiry
-          <span className="inline-block opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">→</span>
         </a>
         <p className="text-[11px] uppercase text-center text-secondary tracking-widest opacity-70">
           We'll respond within 1–2 business days
