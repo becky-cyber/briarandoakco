@@ -66,7 +66,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-foreground/80 text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed font-light"
           >
-            Briar & Oak Co. is an earthy, community-rooted event planning studio serving Magnolia, Tomball, The Woodlands, and surrounding areas.
+            Briar & Oak Co. is a boutique event planning company based in Magnolia, Texas. We specialize in birthdays, baby showers, bridal showers, and milestone celebrations for families across the greater Houston area.
           </motion.p>
           
           <motion.div 
@@ -93,13 +93,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Banner */}
-      <div className="bg-secondary py-12 text-center text-secondary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <p className="text-2xl md:text-3xl font-serif italic tracking-wide relative z-10 font-light">
-          Creative event planning, rooted in community.
-        </p>
-      </div>
 
       {/* About Section */}
       <section id="about" className="py-24 md:py-32 px-6 max-w-7xl mx-auto">
@@ -111,20 +104,20 @@ export default function Home() {
             variants={staggerContainer}
           >
             <motion.h2 variants={fadeUp} className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-8 leading-tight">
-              You bring the people you love. We'll take care of the rest.
+              You bring the people you love. We'll handle everything else.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-foreground/90 text-lg mb-6 leading-relaxed">
               We specialize in the gatherings that matter most: birthday parties, baby showers, bridal showers, milestone celebrations, and everything in between.
             </motion.p>
             <motion.p variants={fadeUp} className="text-foreground/80 text-lg mb-10 italic">
-              No weddings, no corporate events. Just warm, intentional occasions planned with care for real families in the Magnolia area.
+              No weddings. No corporate events. Just meaningful occasions planned with care, right here in your neighborhood.
             </motion.p>
             
             <div className="space-y-6">
               {[
-                { title: "Thoughtfully Personal", desc: "Every detail reflects your style and your guests, never a generic template." },
-                { title: "Stress-Free Day Of", desc: "You show up and enjoy the moment. We handle the timeline and the details." },
-                { title: "Rooted in Community", desc: "Local to Magnolia since 2020, we know this community and love it well." }
+                { title: "Thoughtfully Personal", desc: "Every detail is shaped around your style, your guests, and your vision. Always one of a kind." },
+                { title: "Stress-Free Day-Of Coordination", desc: "You show up, soak it in, and enjoy your people. We run the timeline so you never have to." },
+                { title: "Rooted in Community", desc: "Based in Magnolia since 2020, we know and love this area. We are proud to plan for the families who call it home." }
               ].map((item, idx) => (
                 <motion.div key={idx} variants={fadeUp} className="bg-muted/40 p-6 border-l-4 border-accent hover:bg-muted/80 transition-colors duration-300">
                   <h3 className="font-sans font-bold text-primary uppercase text-sm tracking-widest mb-2">{item.title}</h3>
@@ -163,7 +156,7 @@ export default function Home() {
           >
             <h2 className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-6">Services & Packages</h2>
             <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed">
-              Four clear options so you can find exactly the level of support you need, no matter your budget or event size.
+              Four straightforward packages, from expert guidance to full-service execution, so you can choose exactly the level of support that fits your event and your vision.
             </p>
             <p className="mt-6 text-sm text-secondary font-bold uppercase tracking-widest">
               All bookings require a 50% non-refundable retainer
@@ -177,7 +170,7 @@ export default function Home() {
                 title: "The Grove Session",
                 price: "$225 flat fee",
                 features: ["90-minute planning consultation", "Custom concept & mood board", "Curated vendor recommendations", "Basic timeline & checklist", "Written recap with next steps"],
-                idealFor: "Perfect if you love to DIY but need expert guidance.",
+                idealFor: "Best for DIYers who want a professional plan and clear roadmap to execute on their own.",
                 highlight: false
               },
               {
@@ -185,7 +178,7 @@ export default function Home() {
                 title: "The Seedling",
                 price: "$450+ starting at",
                 features: ["Everything in The Grove Session", "Detailed run-of-show", "3 hours day-of coordination", "Setup oversight", "Two check-in calls"],
-                idealFor: "Ideal for smaller gatherings (20-40 guests).",
+                idealFor: "Great for intimate gatherings of 20 to 40 guests where you want day-of support without full planning.",
                 highlight: false
               },
               {
@@ -193,7 +186,7 @@ export default function Home() {
                 title: "The Briar",
                 price: "$1,100+ starting at",
                 features: ["Everything in The Seedling", "Full vendor sourcing", "Decor design & styling plan", "6 hours day-of coordination", "Guest management"],
-                idealFor: "Best for events of 40 to 80 guests.",
+                idealFor: "Ideal for 40 to 80 guests. Full planning, design, vendor sourcing, and coordination all taken care of for you.",
                 highlight: true
               },
               {
@@ -201,7 +194,7 @@ export default function Home() {
                 title: "The Oak",
                 price: "$2,700+ starting at",
                 features: ["Everything in The Briar", "Full decor execution", "Full setup & teardown", "8 hours day-of coordination", "Bar service coordination"],
-                idealFor: "For larger (80+) or highly styled events.",
+                idealFor: "For larger events of 80 or more guests, or for highly styled, elevated celebrations where every detail matters.",
                 highlight: false
               }
             ].map((pkg, idx) => (
@@ -328,7 +321,7 @@ export default function Home() {
               Let's plan something <span className="italic text-accent">beautiful.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-primary-foreground/80 text-lg mb-12 font-light leading-relaxed max-w-md">
-              Tell us about your event and we'll be in touch to set up a short, no-pressure call. No commitment required.
+              Tell us a little about your event and we'll reach out within 1 to 2 business days to set up a short, no-pressure consultation call.
             </motion.p>
             
             <div className="space-y-8">

@@ -1,0 +1,28 @@
+Please make the following copy updates to the website. Find the relevant text in the source files and update each one:
+
+1. HERO SUBHEAD: Change "Briar & Oak Co. is an earthy, community-rooted event planning studio serving Magnolia, Tomball, The Woodlands, and surrounding areas." to "Briar & Oak Co. is a boutique event planning company based in Magnolia, Texas. We specialize in birthdays, baby showers, bridal showers, and milestone celebrations for families across the greater Houston area."
+
+2. BODY SECTION TAGLINE: Change "Creative event planning, rooted in community." to remove it or keep blank.
+
+3. BODY SECTION SUBHEAD: Change "You bring the people you love. We'll take care of the rest." to "You bring the people you love. We'll handle everything else."
+
+4. BODY SECTION PARAGRAPH: Change "No weddings, no corporate events. Just warm, intentional occasions planned with care for real families in the Magnolia area." to "No weddings. No corporate events. Just meaningful occasions planned with care, right here in your neighborhood."
+
+5. THREE VALUE PROPS - update all three:
+- Change "THOUGHTFULLY PERSONAL" description from "Every detail reflects your style and your guests, never a generic template." to "Every detail is shaped around your style, your guests, and your vision. Always one of a kind."
+- Change "STRESS-FREE DAY OF" label to "STRESS-FREE DAY-OF COORDINATION" and its description from "You show up and enjoy the moment. We handle the timeline and the details." to "You show up, soak it in, and enjoy your people. We run the timeline so you never have to."
+- Change "ROOTED IN COMMUNITY" description from "Local to Magnolia since 2020, we know this community and love it well." to "Based in Magnolia since 2020, we know and love this area. We are proud to plan for the families who call it home."
+
+6. PACKAGES INTRO: Change "Four clear options so you can find exactly the level of support you need, no matter your budget or event size." to "Four straightforward packages, from expert guidance to full-service execution, so you can choose exactly the level of support that fits your event and your vision."
+
+7. PACKAGE TAGLINES - update all four:
+- Grove Session: Change "Perfect if you love to DIY but need expert guidance." to "Best for DIYers who want a professional plan and clear roadmap to execute on their own."
+- Seedling: Change "Ideal for smaller gatherings (20-40 guests)." to "Great for intimate gatherings of 20 to 40 guests where you want day-of support without full planning."
+- Briar: Change "Best for events of 40 to 80 guests." to "Ideal for 40 to 80 guests. Full planning, design, vendor sourcing, and coordination all taken care of for you."
+- Oak: Change "For larger (80+) or highly styled events." to "For larger events of 80 or more guests, or for highly styled, elevated celebrations where every detail matters."
+
+8. ABOUT/BECKY PARAGRAPH: Change "I'm a Magnolia-based event planner with a love for beautiful gatherings and good food. I spent years in the tech industry managing complex programs, the kind where details matter and timelines are tight. The same skills I used to coordinate cross-functional teams are the exact skills that make an event feel effortless. When I'm not planning, I'm in the garden or hosting family pool days." to "I'm a Magnolia-based event planner with a deep love for beautiful gatherings and the people who make them special. Before Briar & Oak Co., I spent years in the tech industry managing complex, detail-heavy programs where timelines were tight and nothing could slip through the cracks. Those same skills, anticipating problems, coordinating moving pieces, staying calm under pressure, are exactly what I bring to your event. When I'm not planning, you'll find me in the garden or hosting a pool day for the family."
+
+9. PROCESS SECTION: Change "Tell us about your event and we'll be in touch to set up a short, no-pressure call. No commitment required." to "Tell us a little about your event and we'll reach out within 1 to 2 business days to set up a short, no-pressure consultation call."
+
+After making all changes, republish the site.
