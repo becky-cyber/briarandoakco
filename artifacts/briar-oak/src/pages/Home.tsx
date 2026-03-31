@@ -267,20 +267,32 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-8"
+            className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-4"
           >
             Hi, I'm Becky
           </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.05 }}
+            viewport={{ once: true }}
+            className="text-secondary text-xl md:text-2xl font-serif italic mb-8"
+          >
+            Host like a Guest.
+          </motion.p>
           
-          <motion.p 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-6 font-light"
+            className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-6 font-light space-y-5"
           >
-            I'm a Magnolia-based event planner with a deep love for beautiful gatherings and the people who make them special. Before Briar & Oak Co., I spent years in the tech industry managing complex, detail-heavy programs where timelines were tight and nothing could slip through the cracks. Those same skills, anticipating problems, coordinating moving pieces, staying calm under pressure, are exactly what I bring to your event. When I'm not planning, you'll find me in the garden or hosting a pool day for the family.
-          </motion.p>
+            <p>I spent years in tech as a Program Management professional, mastering logistics, wrangling timelines, and making sure the details that mattered most were handled quietly, without anyone noticing the work. But my favorite projects were never in a boardroom. They were happening around my dining room table.</p>
+            <p>Briar & Oak Co. is built for the milestones that actually make up a life: the 40th birthdays, the sprinkle showers, the celebrations that deserve more than a paper plate. By focusing exclusively on social gatherings and intentionally skipping the wedding industry, every client gets the full-budget attention their celebration deserves.</p>
+            <p>I bring a project manager's precision and a hostess's warmth to your event. You just have to show up and raise a glass.</p>
+          </motion.div>
           
           <motion.div 
             initial={{ opacity: 0 }}
