@@ -279,17 +279,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-6 font-light"
           >
-            I'm a Magnolia-based event planner with a love for beautiful gatherings and good food. I spent years in the tech industry managing complex programs—the kind where details matter and timelines are tight.
-          </motion.p>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-12 font-light"
-          >
-            The same skills I used to coordinate cross-functional teams are the exact skills that make an event feel effortless. When I'm not planning, I'm in the garden or hosting family pool days.
+            I'm a Magnolia-based event planner with a deep love for beautiful gatherings and the people who make them special. Before Briar & Oak Co., I spent years in the tech industry managing complex, detail-heavy programs where timelines were tight and nothing could slip through the cracks. Those same skills, anticipating problems, coordinating moving pieces, staying calm under pressure, are exactly what I bring to your event. When I'm not planning, you'll find me in the garden or hosting a pool day for the family.
           </motion.p>
           
           <motion.div 
