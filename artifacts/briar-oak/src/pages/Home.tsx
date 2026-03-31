@@ -176,7 +176,7 @@ export default function Home() {
               {
                 level: "Essential",
                 title: "The Seedling",
-                price: "$450+ starting at",
+                price: "Starting at $450+",
                 features: ["Everything in The Grove Session", "Detailed run-of-show", "3 hours day-of coordination", "Setup oversight", "Two check-in calls"],
                 idealFor: "Great for intimate gatherings of 20 to 40 guests where you want day-of support without full planning.",
                 highlight: false
@@ -184,7 +184,7 @@ export default function Home() {
               {
                 level: "Full Service",
                 title: "The Briar",
-                price: "$1,100+ starting at",
+                price: "Starting at $1,100+",
                 features: ["Everything in The Seedling", "Full vendor sourcing", "Decor design & styling plan", "6 hours day-of coordination", "Guest management"],
                 idealFor: "Ideal for 40 to 80 guests. Full planning, design, vendor sourcing, and coordination all taken care of for you.",
                 highlight: true
@@ -192,7 +192,7 @@ export default function Home() {
               {
                 level: "Premium",
                 title: "The Oak",
-                price: "$2,700+ starting at",
+                price: "Starting at $2,700+",
                 features: ["Everything in The Briar", "Full decor execution", "Full setup & teardown", "8 hours day-of coordination", "Bar service coordination"],
                 idealFor: "For larger events of 80 or more guests, or for highly styled, elevated celebrations where every detail matters.",
                 highlight: false
