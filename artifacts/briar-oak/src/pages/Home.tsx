@@ -401,29 +401,9 @@ export default function Home() {
               </button>
             </motion.div>
           </motion.div>
+      </div>
+    </section>
 
-          {/* Small “how to choose” helper text */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.25 }}
-            className="mt-10 text-center text-xs text-foreground/70 max-w-2xl mx-auto leading-relaxed"
-          >
-            Not sure which is right for you?{" "}
-            <button
-              onClick={scrollTo("contact")}
-              className="underline underline-offset-4 decoration-primary hover:text-primary font-semibold"
-            >
-              Reach out
-            </button>{" "}
-            and we’ll talk through your guest count, space, and budget to find
-            the best fit.
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Meet Becky */}
       <section className="py-24 md:py-32 px-6 relative">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
