@@ -262,53 +262,23 @@ export default function Home() {
               <ul className="text-sm space-y-4 mb-8 flex-grow text-foreground/80">
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">
-                    90-minute kickoff planning session to map your vision,
-                    priorities, and budget.
-                  </span>
+                  <span className="leading-snug">A personalized kickoff planning session to define your vision, priorities, and guest experience</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">
-                    Custom design and styling plan with mood board plus
-                    suggested shopping list or rental recommendations.
-                  </span>
+                  <span className="leading-snug">A custom design and styling plan with mood board and sourcing guidance</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">
-                    Vendor sourcing and coordination for up to 3 key vendors,
-                    such as catering, rentals, balloons or decor, bar, or
-                    entertainment.
-                  </span>
+                  <span className="leading-snug">Coordination for up to 3 key vendors</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">
-                    Detailed event timeline and run-of-show shared with your
-                    vendor team.
-                  </span>
+                  <span className="leading-snug">A detailed event timeline and run-of-show</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">
-                    One venue or home walkthrough before the event.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">
-                    Up to 6 hours of event-day direction focused on setup,
-                    vendor management, and keeping the event running smoothly.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">
-                    Light decor styling for up to 4 guest tables, one bar or
-                    drink station, and one entry area using items you own or
-                    rent.
-                  </span>
+                  <span className="leading-snug">One site walkthrough before the event</span>
                 </li>
               </ul>
 
