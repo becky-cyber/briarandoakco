@@ -108,66 +108,46 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-24 md:py-32 px-6 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          <motion.div
+          <motion.div 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            <motion.h2
-              variants={fadeUp}
-              className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-8 leading-tight"
-            >
-              You bring the people you love. We'll handle everything else.
+            <motion.h2 variants={fadeUp} className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-8 leading-tight">
+              Beautiful gatherings begin with a thoughtful plan.
             </motion.h2>
-            <motion.p
-              variants={fadeUp}
-              className="text-foreground/90 text-lg mb-6 leading-relaxed"
-            >
-              We specialize in the gatherings that matter most: birthday
-              parties, baby showers, bridal showers, milestone celebrations, and
-              everything in between.
+            <motion.p variants={fadeUp} className="text-foreground/90 text-lg mb-6 leading-relaxed">
+              We specialize in the gatherings that matter most: birthdays, baby showers, bridal showers, milestone celebrations, and everything in between.
             </motion.p>
-            <motion.p
-              variants={fadeUp}
-              className="text-foreground/80 text-lg mb-10 italic"
-            >
-              No weddings. No corporate events. Just meaningful occasions
-              planned with care, right here in your neighborhood.
+            <motion.p variants={fadeUp} className="text-foreground/80 text-lg mb-10 italic">
+              No weddings. No corporate events. Just meaningful occasions planned with care, right here in your neighborhood.
             </motion.p>
-
+            
             <div className="space-y-6">
               {[
-                {
-                  title: "Thoughtfully Personal",
-                  desc: "Every detail is shaped around your style, your guests, and your vision. Always one of a kind.",
+                { 
+                  title: "Thoughtfully Personal", 
+                  desc: "Every detail is shaped around your style, your guests, and your vision—so your celebration feels personal, polished, and truly your own." 
                 },
-                {
-                  title: "Stress-Free Day-Of Coordination",
-                  desc: "You show up, soak it in, and enjoy your people. We run the timeline so you never have to.",
+                { 
+                  title: "Calm, Capable Support", 
+                  desc: "Whether you need full event direction or simply a professional plan to follow, we bring structure, clarity, and thoughtful guidance from the very beginning." 
                 },
-                {
-                  title: "Rooted in Community",
-                  desc: "Based in Magnolia since 2020, we know and love this area. We are proud to plan for the families who call it home.",
-                },
+                { 
+                  title: "Rooted in Community", 
+                  desc: "Based in Magnolia since 2020, we know and love this area. We are proud to plan for the families who call it home." 
+                }
               ].map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  variants={fadeUp}
-                  className="bg-muted/40 p-6 border-l-4 border-accent hover:bg-muted/80 transition-colors duration-300"
-                >
-                  <h3 className="font-sans font-bold text-primary uppercase text-sm tracking-widest mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">
-                    {item.desc}
-                  </p>
+                <motion.div key={idx} variants={fadeUp} className="bg-muted/40 p-6 border-l-4 border-accent hover:bg-muted/80 transition-colors duration-300">
+                  <h3 className="font-sans font-bold text-primary uppercase text-sm tracking-widest mb-2">{item.title}</h3>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.desc}</p>
                 </motion.div>
               ))}
             </div>
           </motion.div>
-
-          <motion.div
+          
+          <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -175,15 +155,14 @@ export default function Home() {
             className="relative h-[500px] lg:h-[700px] w-full"
           >
             <div className="absolute inset-0 bg-primary/5 -translate-x-4 -translate-y-4 border border-accent/20"></div>
-            <img
+            <img 
               src={`${import.meta.env.BASE_URL}images/warm-candid-gathering.png`}
-              alt="Warm candid gathering"
+              alt="Warm candid gathering" 
               className="w-full h-full object-cover shadow-xl relative z-10"
             />
           </motion.div>
         </div>
       </section>
-
       {/* Services Section */}
       <section id="services" className="bg-muted/30 py-24 md:py-32 px-6">
         <div className="max-w-7xl mx-auto">
