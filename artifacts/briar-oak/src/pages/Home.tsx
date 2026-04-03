@@ -429,23 +429,11 @@ export default function Home() {
             className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-6 font-light space-y-5"
           >
             <p>
-              I spent years in tech as a Program Management professional,
-              mastering logistics, wrangling timelines, and making sure the
-              details that mattered most were handled quietly, without anyone
-              noticing the work. But my favorite projects were never in a
-              boardroom. They were happening around my dining room table.
-            </p>
-            <p>
-              Briar & Oak Co. is built for the milestones that actually make up
-              a life: the 40th birthdays, the sprinkle showers, the celebrations
-              that deserve more than a paper plate. By focusing exclusively on
-              social gatherings and intentionally skipping the wedding industry,
-              every client gets the full-budget attention their celebration
-              deserves.
-            </p>
-            <p>
-              I bring a project manager's precision and a hostess's warmth to
-              your event. You just have to show up and raise a glass.
+              I came to event planning the long way around. After years in tech and business—managing timelines, solving problems, making sure the details worked seamlessly—I realized the moments that actually matter to me weren't happening in conference rooms. They were the dinners with friends, the celebrations with family, the gatherings that brought people together around a table.
+
+              That realization changed everything. I wanted to create that magic for others—to handle all the moving parts so you can actually be present with the people you love. Briar & Oak Co. is about protecting and honoring those moments. Whether it's your 40th birthday, your daughter's baby shower, or a milestone that deserves more than logistics—I'm here to make sure every detail reflects who you are and what this celebration means.
+
+              I bring a project manager's precision and a hostess's genuine warmth to your event. I'll sweat the details so you don't have to.
             </p>
           </motion.div>
 
