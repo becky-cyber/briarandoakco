@@ -421,24 +421,28 @@ export default function Home() {
             Host like a Guest.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            viewport={{ once: true }}
-            className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-6 font-light space-y-5"
-          >
-            <p>
-              I came to event planning the long way around. After years in tech and business—managing timelines, solving problems, making sure the details worked seamlessly—I realized the moments that actually matter to me weren't happening in conference rooms. They were the dinners with friends, the celebrations with family, the gatherings that brought people together around a table.
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          viewport={{ once: true }}
+          className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-6 font-light space-y-5 text-center mx-auto max-w-3xl"
+        >
+          <p>
+            I came to event planning the long way around. After years of managing complex programs in tech, juggling timelines, solving challenges, making sure every detail came together, I realized the moments that actually matter to me weren't happening in conference rooms. They were the dinners with friends, the celebrations with family, the gatherings that brought people together around a table.
+          </p>
+          <p>
+            That realization changed everything. I wanted to create that magic for others, to handle all the moving parts so you can actually be present with the people you love.
+          </p>
+          <p>
+            Briar & Oak Co. is about protecting and honoring those moments. Whether it's your 40th birthday, your daughter's baby shower, or a milestone that deserves more than logistics, I'm here to make sure every detail reflects who you are and what this celebration means.
+          </p>
+          <p>
+            I bring a project manager's precision and a hostess's genuine warmth to your event. I'll sweat the details so you don't have to.
+          </p>
+        </motion.div>
 
-              That realization changed everything. I wanted to create that magic for others—to handle all the moving parts so you can actually be present with the people you love. Briar & Oak Co. is about protecting and honoring those moments. Whether it's your 40th birthday, your daughter's baby shower, or a milestone that deserves more than logistics—I'm here to make sure every detail reflects who you are and what this celebration means.
-
-              I bring a project manager's precision and a hostess's genuine warmth to your event. I'll sweat the details so you don't have to.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
+          <motion.div           initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 1 }}
             viewport={{ once: true }}
