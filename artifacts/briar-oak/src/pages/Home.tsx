@@ -63,9 +63,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-primary text-5xl md:text-7xl lg:text-8xl font-serif font-semibold leading-[1.1] mb-8"
           >
-            Relaxed gatherings, <br />
+            Your celebration, <br />
             <span className="italic font-light text-primary/90">
-              thoughtfully planned
+              handled start to finish.
             </span>
           </motion.h1>
 
@@ -75,10 +75,10 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-foreground/80 text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed font-light"
           >
-            Briar & Oak Co. is a boutique event planning company based in
-            Magnolia, Texas. We specialize in birthdays, baby showers, bridal
-            showers, and milestone celebrations for families across the greater
-            Houston area.
+            Briar & Oak Co. is an event planning company based in Magnolia,
+            Texas. We plan birthdays, baby showers, bridal showers, backyard
+            parties, and milestone celebrations for families across the greater
+            Houston area. No weddings, no corporate events. Just the good stuff.
           </motion.p>
 
           <motion.div
@@ -115,28 +115,28 @@ export default function Home() {
             variants={staggerContainer}
           >
             <motion.h2 variants={fadeUp} className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-8 leading-tight">
-              Beautiful gatherings begin with a thoughtful plan.
+              We handle the details. You enjoy the party.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-foreground/90 text-lg mb-6 leading-relaxed">
-              We specialize in the gatherings that matter most: birthdays, baby showers, bridal showers, milestone celebrations, and everything in between.
+              Birthdays, baby showers, bridal showers, backyard parties, milestone dinners, and everything in between. If it's a gathering worth celebrating, we can plan it.
             </motion.p>
             <motion.p variants={fadeUp} className="text-foreground/80 text-lg mb-10 italic">
-              No weddings. No corporate events. Just meaningful occasions planned with care, right here in your neighborhood.
+              We focus on social events in Magnolia and the surrounding areas. No weddings, no corporate gigs. That focus means every client gets our full attention.
             </motion.p>
             
             <div className="space-y-6">
               {[
                 { 
-                  title: "Thoughtfully Personal", 
-                  desc: "Every detail is shaped around your style, your guests, and your vision—so your celebration feels personal, polished, and truly your own." 
+                  title: "Built Around You", 
+                  desc: "Every plan starts with a real conversation about what you want, who's coming, and how you want the day to feel." 
                 },
                 { 
-                  title: "Calm, Capable Support", 
-                  desc: "Whether you need full event direction or simply a professional plan to follow, we bring structure, clarity, and thoughtful guidance from the very beginning." 
+                  title: "Calm on Event Day", 
+                  desc: "You show up. We run the details behind the scenes so nothing falls through the cracks." 
                 },
                 { 
-                  title: "Rooted in Community", 
-                  desc: "Based in Magnolia since 2020, we know and love this area. We are proud to plan for the families who call it home." 
+                  title: "Local Since 2020", 
+                  desc: "We live and work in Magnolia. We know the venues, the neighborhoods, and the families who make this community great." 
                 }
               ].map((item, idx) => (
                 <motion.div key={idx} variants={fadeUp} className="bg-muted/40 p-6 border-l-4 border-accent hover:bg-muted/80 transition-colors duration-300">
@@ -174,10 +174,10 @@ export default function Home() {
             className="text-center mb-16 md:mb-24"
           >
             <h2 className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-6">
-              Services &amp; Packages
+              What We Offer
             </h2>
             <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed">
-              One signature planning experience plus a lighter design-only option, so you can choose the level of support that fits your gathering, your style, and your budget.
+              Two options depending on how much help you want. One is full planning with day-of support. The other is a design session and game plan you can run with yourself.
             </p>
             <p className="mt-6 text-sm text-secondary font-bold uppercase tracking-widest">
               All bookings require a 50% non-refundable retainer
@@ -196,7 +196,7 @@ export default function Home() {
                 Signature Service
               </div>
               <span className="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-3">
-                Signature Planning &amp; Event Direction
+                Full Planning + Event Day Support
               </span>
               <h3 className="text-primary text-3xl font-serif mb-2">
                 The Briar
@@ -205,7 +205,7 @@ export default function Home() {
                 Starting at $1,500
               </p>
               <p className="text-sm text-foreground/80 leading-relaxed mb-8">
-                For the host who wants a beautifully considered gathering without carrying the weight of every decision, detail, and vendor conversation. The Briar is our signature planning experience—bespoke, polished, and thoughtfully tailored to the way you want your event to feel from the moment guests arrive.
+                The Briar is the right pick if you want someone to handle the planning from start to finish and show up on event day to run things. You focus on your guests. We take care of everything else.
               </p>
               <ul className="text-sm space-y-4 mb-8 flex-grow text-foreground/80">
                 <li className="flex items-start">
@@ -238,7 +238,7 @@ export default function Home() {
                 </li>
               </ul>
               <p className="text-sm italic mb-4 text-foreground/60 border-t border-border pt-4">
-                Designed for intimate celebrations that deserve to feel refined, deeply personal, and quietly elevated.
+                Best for gatherings where you want to feel like a guest, not a coordinator.
               </p>
               <p className="text-xs leading-relaxed text-foreground/60 mb-8">
                 Onsite coverage is focused on overseeing setup, guiding vendors, styling final details, and staying through the beginning of your event until everything is moving smoothly. If you’d like support beyond that point—such as dinner service, toasts, cake cutting, or teardown—extended coverage can be added for an additional fee.
@@ -247,7 +247,7 @@ export default function Home() {
                 onClick={scrollTo("contact")}
                 className="block w-full text-center py-4 text-xs font-bold uppercase tracking-[0.2em] bg-accent text-accent-foreground hover:bg-primary transition-all duration-300"
               >
-                Begin Your Briar Experience
+                Inquire About The Briar
               </button>
             </motion.div>
             {/* The Seedling - planning only */}
@@ -259,7 +259,7 @@ export default function Home() {
               className="bg-background p-8 lg:p-10 flex flex-col h-full border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <span className="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-3">
-                Design &amp; Game Plan
+                Design Session + Game Plan
               </span>
               <h3 className="text-primary text-3xl font-serif mb-2">
                 The Seedling
@@ -268,7 +268,7 @@ export default function Home() {
                 Flat fee starting around $400–$600
               </p>
               <p className="text-sm text-foreground/80 leading-relaxed mb-8">
-                For the host who loves a beautiful gathering and simply wants an expert plan before taking it from there. The Seedling is a focused design and strategy service that gives you a clear vision, an organized roadmap, and the confidence to execute it yourself.
+                The Seedling is for hosts who want a solid plan and a clear vision but prefer to handle the setup and execution themselves. We meet, map it out, and hand you a plan you can actually use.
               </p>
               <ul className="text-sm space-y-4 mb-8 flex-grow text-foreground/80">
                 <li className="flex items-start">
@@ -297,13 +297,13 @@ export default function Home() {
                 </li>
               </ul>
               <p className="text-sm italic mb-8 text-foreground/60 border-t border-border pt-4">
-                Perfect for DIY-minded hosts who want the benefit of a professional eye and a cohesive plan, then carry it out themselves.
+                A good pick for DIY hosts who want a professional eye without the full-service price tag.
               </p>
               <button
                 onClick={scrollTo("contact")}
                 className="block w-full text-center py-4 text-xs font-bold uppercase tracking-[0.2em] bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
               >
-                Book Your Design Session
+                Book a Design Session
               </button>
             </motion.div>
           </div>
@@ -320,7 +320,7 @@ export default function Home() {
                 How It Works
               </h3>
               <p className="text-foreground/75 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                Every Briar &amp; Oak Co. experience begins with a conversation, then moves into the level of support that best fits your gathering.
+                Every project starts with a free consult call. From there, it depends on which package fits your event.
               </p>
             </motion.div>
             <div className="grid md:grid-cols-2 gap-10 md:gap-12">
@@ -343,7 +343,7 @@ export default function Home() {
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 3</p>
-                    <p className="text-foreground/85 leading-relaxed">We begin planning. From design direction to vendor coordination and event logistics, I handle the moving parts behind the scenes while keeping you focused on the decisions that matter most.</p>
+                    <p className="text-foreground/85 leading-relaxed">We get to work. Design direction, vendor sourcing, logistics, and all the back-and-forth that comes with planning a real event.</p>
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 4</p>
@@ -357,12 +357,12 @@ export default function Home() {
                   The Seedling
                 </p>
                 <h4 className="text-primary text-2xl font-serif mb-6">
-                  Design &amp; Game Plan Process
+                  Design Session Process
                 </h4>
                 <div className="space-y-6">
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 1</p>
-                    <p className="text-foreground/85 leading-relaxed">Begin with a complimentary consult so we can talk through your event and confirm whether The Seedling is the right fit, or if your gathering would benefit from a more hands-on planning experience.</p>
+                    <p className="text-foreground/85 leading-relaxed">We start with a free call to talk through your event and make sure The Seedling is the right fit.</p>
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 2</p>
@@ -370,7 +370,7 @@ export default function Home() {
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 3</p>
-                    <p className="text-foreground/85 leading-relaxed">We meet for a focused 60–90 minute planning and design session to walk through your space, layout, style, and setup priorities.</p>
+                    <p className="text-foreground/85 leading-relaxed">We meet for 60 to 90 minutes to go over your space, layout, style, and setup priorities.</p>
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 4</p>
@@ -429,16 +429,16 @@ export default function Home() {
           className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-6 font-light space-y-5 text-center mx-auto max-w-3xl"
         >
           <p>
-            I came to event planning the long way around. After years of managing complex programs in tech, juggling timelines, solving challenges, making sure every detail came together, I realized the moments that actually matter to me weren't happening in conference rooms. They were the dinners with friends, the celebrations with family, the gatherings that brought people together around a table.
+            Before I started Briar & Oak, I spent years in tech managing complex programs with tight deadlines and a lot of moving parts. I was good at it. But my favorite projects were always the ones that happened outside of work: the birthday dinners, the family gatherings, the events where people actually showed up and stayed too long.
           </p>
           <p>
-            That realization changed everything. I wanted to create that magic for others, to handle all the moving parts so you can actually be present with the people you love.
+            I started this business because I wanted to do that for other people. Show up, handle the details, and make it easier for you to be present with the people you're celebrating with.
           </p>
           <p>
-            Briar & Oak Co. is about protecting and honoring those moments. Whether it's your 40th birthday, your daughter's baby shower, or a milestone that deserves more than logistics, I'm here to make sure every detail reflects who you are and what this celebration means.
+            We focus on social events only: birthdays, baby showers, bridal showers, backyard parties, and milestone celebrations in Magnolia and the surrounding areas. No weddings, no corporate work. That keeps my schedule and my attention where they belong.
           </p>
           <p>
-            I bring a project manager's precision and a hostess's genuine warmth to your event. I'll sweat the details so you don't have to.
+            If you want someone who takes your event as seriously as you do and knows how to stay calm when things get complicated, I think we'll work well together.
           </p>
         </motion.div>
 
@@ -482,23 +482,23 @@ export default function Home() {
               variants={fadeUp}
               className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold mb-6 leading-tight"
             >
-              Let's plan something{" "}
-              <span className="italic text-accent">beautiful.</span>
+              Ready to get{" "}
+              <span className="italic text-accent">started?</span>
             </motion.h2>
             <motion.p
               variants={fadeUp}
               className="text-primary-foreground/80 text-lg mb-12 font-light leading-relaxed max-w-md"
             >
-              Tell us a little about your event and we'll reach out within 1 to
-              2 business days to set up a short, no-pressure consultation call.
+              Fill out the form and we'll be in touch within 1 to
+              2 business days to set up a free call.
             </motion.p>
 
             <div className="space-y-8">
               {[
-                { step: "1", text: "Fill out the inquiry form" },
-                { step: "2", text: "We'll reach out within 1-2 business days" },
-                { step: "3", text: "Free consultation call to find your fit" },
-                { step: "4", text: "Secure your date with a 50% retainer" },
+                { step: "1", text: "Submit your inquiry" },
+                { step: "2", text: "Hear back within 1 to 2 business days" },
+                { step: "3", text: "Free consult call to talk through your event" },
+                { step: "4", text: "Sign and pay your retainer to hold your date" },
               ].map((item, idx) => (
                 <motion.div
                   key={idx}
