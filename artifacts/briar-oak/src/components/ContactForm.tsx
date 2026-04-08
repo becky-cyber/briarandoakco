@@ -6,7 +6,7 @@ export function ContactForm() {
       <div className="absolute top-0 left-0 w-1 h-full bg-accent transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-700 ease-out" />
       <div className="space-y-6">
         <p className="text-foreground/80 text-sm leading-relaxed">
-          Ready to start planning? Click below to fill out our inquiry form and we will be in touch within 1-2 business days to schedule your free consultation.
+          Ready to start planning? Fill out the inquiry form and we will be in touch within 1 to 2 business days to schedule your free consult.
         </p>
         <a
           href={HONEYBOOK_URL}
@@ -17,7 +17,7 @@ export function ContactForm() {
           Start My Inquiry
         </a>
         <p className="text-[11px] uppercase text-center text-secondary tracking-widest mt-6 opacity-70">
-          We will respond within 1-2 business days
+          We will respond within 1 to 2 business days
         </p>
       </div>
     </div>

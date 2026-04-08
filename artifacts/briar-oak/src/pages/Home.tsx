@@ -77,8 +77,9 @@ export default function Home() {
           >
             Briar & Oak Co. is an event planning company based in Magnolia,
             Texas. We plan birthdays, baby showers, bridal showers, backyard
-            parties, and milestone celebrations for families across the greater
-            Houston area. No weddings, no corporate events. Just the good stuff.
+            parties, and milestone celebrations for families in Magnolia and
+            surrounding areas. No weddings. No corporate events. Just parties
+            worth celebrating.
           </motion.p>
 
           <motion.div
@@ -128,15 +129,15 @@ export default function Home() {
               {[
                 { 
                   title: "Built Around You", 
-                  desc: "Every plan starts with a real conversation about what you want, who's coming, and how you want the day to feel." 
+                  desc: "Every plan starts with a real conversation about what you want, who's coming, and what matters most to you." 
                 },
                 { 
                   title: "Calm on Event Day", 
-                  desc: "You show up. We run the details behind the scenes so nothing falls through the cracks." 
+                  desc: "You show up. We handle the details so you can enjoy your people and the party." 
                 },
                 { 
                   title: "Local Since 2020", 
-                  desc: "We live and work in Magnolia. We know the venues, the neighborhoods, and the families who make this community great." 
+                  desc: "We live and work in Magnolia. We know the area, the spaces people use, and the kind of gatherings families host here." 
                 }
               ].map((item, idx) => (
                 <motion.div key={idx} variants={fadeUp} className="bg-muted/40 p-6 border-l-4 border-accent hover:bg-muted/80 transition-colors duration-300">
@@ -210,7 +211,7 @@ export default function Home() {
               <ul className="text-sm space-y-4 mb-8 flex-grow text-foreground/80">
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A personalized kickoff planning session to define your vision, priorities, and guest experience</span>
+                  <span className="leading-snug">A kickoff planning session to talk through your vision, priorities, and event details</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
@@ -222,7 +223,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A detailed event timeline and run-of-show</span>
+                  <span className="leading-snug">A detailed event timeline and plan for the day</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
@@ -238,10 +239,10 @@ export default function Home() {
                 </li>
               </ul>
               <p className="text-sm italic mb-4 text-foreground/60 border-t border-border pt-4">
-                Best for gatherings where you want to feel like a guest, not a coordinator.
+                Best for gatherings where you want real help and a clear plan from start to finish.
               </p>
               <p className="text-xs leading-relaxed text-foreground/60 mb-8">
-                Onsite coverage is focused on overseeing setup, guiding vendors, styling final details, and staying through the beginning of your event until everything is moving smoothly. If you’d like support beyond that point—such as dinner service, toasts, cake cutting, or teardown—extended coverage can be added for an additional fee.
+                Onsite coverage includes overseeing setup, guiding vendors, styling final details, and staying through the beginning of your event until everything is running smoothly. If you need support beyond that, such as dinner service, toasts, cake cutting, or teardown, extended coverage can be added for an additional fee.
               </p>
               <button
                 onClick={scrollTo("contact")}
@@ -265,7 +266,7 @@ export default function Home() {
                 The Seedling
               </h3>
               <p className="text-2xl font-serif text-accent mb-6 italic">
-                Flat fee starting around $400–$600
+                Flat fee starting around $400 to $600
               </p>
               <p className="text-sm text-foreground/80 leading-relaxed mb-8">
                 The Seedling is for hosts who want a solid plan and a clear vision but prefer to handle the setup and execution themselves. We meet, map it out, and hand you a plan you can actually use.
@@ -273,11 +274,11 @@ export default function Home() {
               <ul className="text-sm space-y-4 mb-8 flex-grow text-foreground/80">
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A 60–90 minute planning and design session</span>
+                  <span className="leading-snug">A 60 to 90 minute planning and design session</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A custom mood board and aesthetic direction tailored to your space</span>
+                  <span className="leading-snug">A custom mood board and design direction for your space</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-accent mr-2 mt-0.5">•</span>
@@ -297,7 +298,7 @@ export default function Home() {
                 </li>
               </ul>
               <p className="text-sm italic mb-8 text-foreground/60 border-t border-border pt-4">
-                A good pick for DIY hosts who want a professional eye without the full-service price tag.
+                A good fit for DIY hosts who want expert guidance without full planning support.
               </p>
               <button
                 onClick={scrollTo("contact")}
@@ -320,7 +321,7 @@ export default function Home() {
                 How It Works
               </h3>
               <p className="text-foreground/75 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                Every project starts with a free consult call. From there, it depends on which package fits your event.
+                Every project starts with a free consult. From there, we move into the level of support that fits your event best.
               </p>
             </motion.div>
             <div className="grid md:grid-cols-2 gap-10 md:gap-12">
@@ -335,11 +336,11 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 1</p>
-                    <p className="text-foreground/85 leading-relaxed">Start with a complimentary consult so we can talk through your event, your space, your guest count, and the kind of support you’re looking for.</p>
+                    <p className="text-foreground/85 leading-relaxed">Start with a free consult so we can talk through your event, your space, your guest count, and the kind of support you want.</p>
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 2</p>
-                    <p className="text-foreground/85 leading-relaxed">Receive a tailored proposal with your recommended scope, pricing, and next steps. If it feels like the right fit, you’ll sign your contract and submit your retainer to reserve your date.</p>
+                    <p className="text-foreground/85 leading-relaxed">Receive a proposal with your recommended scope, pricing, and next steps. If it feels like the right fit, you'll sign your contract and submit your retainer to reserve your date.</p>
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 3</p>
@@ -347,7 +348,7 @@ export default function Home() {
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 4</p>
-                    <p className="text-foreground/85 leading-relaxed">On event day, I’m onsite to oversee setup, guide vendors, style final details, and carry your event through its opening flow so you can host with ease.</p>
+                    <p className="text-foreground/85 leading-relaxed">On event day, I'm onsite to oversee setup, guide vendors, style final details, and help everything start smoothly so you can enjoy hosting.</p>
                   </div>
                 </div>
               </motion.div>
@@ -366,7 +367,7 @@ export default function Home() {
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 2</p>
-                    <p className="text-foreground/85 leading-relaxed">I’ll send a flat-fee proposal outlining what’s included. Once you approve it, you’ll sign and pay to book your design session.</p>
+                    <p className="text-foreground/85 leading-relaxed">I'll send a flat-fee proposal showing what's included. Once you approve it, you'll sign and pay to book your design session.</p>
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 3</p>
@@ -374,14 +375,14 @@ export default function Home() {
                   </div>
                   <div className="border-l-2 border-accent pl-5">
                     <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 4</p>
-                    <p className="text-foreground/85 leading-relaxed">Within a few business days, you’ll receive your custom mood board, shopping list, setup notes, and simple event-day timeline—plus one follow-up round for clarifications.</p>
+                    <p className="text-foreground/85 leading-relaxed">Within a few business days, you'll receive your custom mood board, shopping list, setup notes, and simple event-day timeline, plus one follow-up round for clarifications.</p>
                   </div>
                 </div>
               </motion.div>
             </div>
             <motion.div variants={fadeUp} className="text-center mt-12 pt-10 border-t border-border">
               <p className="text-sm text-foreground/70 leading-relaxed max-w-2xl mx-auto">
-                Not sure which service is right for you? Reach out and we’ll talk through your guest count, space, style, and goals to find the best fit.
+                Not sure which service is right for you? Reach out and we'll talk through your guest count, space, style, and goals to find the best fit.
               </p>
             </motion.div>
           </motion.div>
@@ -418,7 +419,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-secondary text-xl md:text-2xl font-serif italic mb-8"
           >
-            Host like a Guest.
+            Host like a guest.
           </motion.p>
 
         <motion.div
@@ -438,7 +439,7 @@ export default function Home() {
             We focus on social events only: birthdays, baby showers, bridal showers, backyard parties, and milestone celebrations in Magnolia and the surrounding areas. No weddings, no corporate work. That keeps my schedule and my attention where they belong.
           </p>
           <p>
-            If you want someone who takes your event as seriously as you do and knows how to stay calm when things get complicated, I think we'll work well together.
+            If you want someone who takes your event seriously and knows how to stay calm when things get complicated, I think we'll work well together.
           </p>
         </motion.div>
 
@@ -450,7 +451,7 @@ export default function Home() {
           >
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>{" "}
-              Details Done Quietly
+              Details Handled Well
             </div>
             <div className="hidden md:block w-px h-4 bg-border"></div>
             <div className="flex items-center gap-2">
@@ -460,7 +461,7 @@ export default function Home() {
             <div className="hidden md:block w-px h-4 bg-border"></div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-accent rounded-full"></span> Real
-              Over Perfect
+              Life Over Perfect
             </div>
           </motion.div>
         </div>
@@ -538,7 +539,7 @@ export default function Home() {
             BRIAR & OAK CO.
           </a>
           <p className="text-secondary text-xs mb-10 uppercase tracking-[0.2em] font-bold">
-            Magnolia • Tomball • The Woodlands • Spring • Cypress
+            Magnolia and Surrounding Areas
           </p>
 
           <div className="flex justify-center gap-8 mb-12">

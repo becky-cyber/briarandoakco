@@ -1,0 +1,196 @@
+The new homepage is published and much better. Now I want a cleanup pass on the live copy so it sounds even more natural and less polished.
+
+Please review src/pages/Home.tsx and make these edits only. Do not redesign the site. Do not change layout, colors, fonts, or spacing unless a very small text-fit adjustment is needed. Do not add any libraries.
+
+Main goal:
+Make the copy sound simpler, warmer, and more like a real local business owner. Remove any remaining phrases that feel polished, corporate, luxury, or AI-written.
+
+Important rules:
+- Remove all em dashes
+- Remove en dashes too
+- Replace curly apostrophes with straight apostrophes
+- Avoid phrases like guest experience, run-of-show, tailored, complimentary, curated, aesthetic direction, greater Houston area, opening flow, quietly, perfect, premium, seamless
+- Keep Magnolia and surrounding areas language
+- Keep the tone warm and capable
+- Keep all pricing and package structure intact
+
+Please make these exact copy changes:
+
+1. Hero paragraph
+Current:
+Briar & Oak Co. is an event planning company based in Magnolia, Texas. We plan birthdays, baby showers, bridal showers, backyard parties, and milestone celebrations for families across the greater Houston area. No weddings, no corporate events. Just the good stuff.
+
+Replace with:
+Briar & Oak Co. is an event planning company based in Magnolia, Texas. We plan birthdays, baby showers, bridal showers, backyard parties, and milestone celebrations for families in Magnolia and surrounding areas. No weddings. No corporate events. Just parties worth celebrating.
+
+2. Built Around You blurb
+Current:
+Every plan starts with a real conversation about what you want, who's coming, and how you want the day to feel.
+
+Replace with:
+Every plan starts with a real conversation about what you want, who's coming, and what matters most to you.
+
+3. Calm On Event Day blurb
+Current:
+You show up. We run the details behind the scenes so nothing falls through the cracks.
+
+Replace with:
+You show up. We handle the details so you can enjoy your people and the party.
+
+4. Local Since 2020 blurb
+Current:
+We live and work in Magnolia. We know the venues, the neighborhoods, and the families who make this community great.
+
+Replace with:
+We live and work in Magnolia. We know the area, the spaces people use, and the kind of gatherings families host here.
+
+5. The Briar bullet
+Current:
+A personalized kickoff planning session to define your vision, priorities, and guest experience
+
+Replace with:
+A kickoff planning session to talk through your vision, priorities, and event details
+
+6. The Briar bullet
+Current:
+A detailed event timeline and run-of-show
+
+Replace with:
+A detailed event timeline and plan for the day
+
+7. The Briar best-for line
+Current:
+Best for gatherings where you want to feel like a guest, not a coordinator.
+
+Replace with:
+Best for gatherings where you want real help and a clear plan from start to finish.
+
+8. The Briar extended note
+Current:
+Onsite coverage is focused on overseeing setup, guiding vendors, styling final details, and staying through the beginning of your event until everything is moving smoothly. If you’d like support beyond that point—such as dinner service, toasts, cake cutting, or teardown—extended coverage can be added for an additional fee.
+
+Replace with:
+Onsite coverage includes overseeing setup, guiding vendors, styling final details, and staying through the beginning of your event until everything is running smoothly. If you need support beyond that, such as dinner service, toasts, cake cutting, or teardown, extended coverage can be added for an additional fee.
+
+9. The Seedling price line
+Current:
+Flat fee starting around $400–$600
+
+Replace with:
+Flat fee starting around $400 to $600
+
+10. The Seedling bullet
+Current:
+A 60–90 minute planning and design session
+
+Replace with:
+A 60 to 90 minute planning and design session
+
+11. The Seedling bullet
+Current:
+A custom mood board and aesthetic direction tailored to your space
+
+Replace with:
+A custom mood board and design direction for your space
+
+12. The Seedling closing line
+Current:
+A good pick for DIY hosts who want a professional eye without the full-service price tag.
+
+Replace with:
+A good fit for DIY hosts who want expert guidance without full planning support.
+
+13. How It Works intro
+Current:
+Every project starts with a free consult call. From there, it depends on which package fits your event.
+
+Replace with:
+Every project starts with a free consult. From there, we move into the level of support that fits your event best.
+
+14. Briar step 1
+Current:
+Start with a complimentary consult so we can talk through your event, your space, your guest count, and the kind of support you’re looking for.
+
+Replace with:
+Start with a free consult so we can talk through your event, your space, your guest count, and the kind of support you want.
+
+15. Briar step 2
+Current:
+Receive a tailored proposal with your recommended scope, pricing, and next steps. If it feels like the right fit, you’ll sign your contract and submit your retainer to reserve your date.
+
+Replace with:
+Receive a proposal with your recommended scope, pricing, and next steps. If it feels like the right fit, you'll sign your contract and submit your retainer to reserve your date.
+
+16. Briar step 4
+Current:
+On event day, I’m onsite to oversee setup, guide vendors, style final details, and carry your event through its opening flow so you can host with ease.
+
+Replace with:
+On event day, I'm onsite to oversee setup, guide vendors, style final details, and help everything start smoothly so you can enjoy hosting.
+
+17. Seedling step 2
+Current:
+I’ll send a flat-fee proposal outlining what’s included. Once you approve it, you’ll sign and pay to book your design session.
+
+Replace with:
+I'll send a flat-fee proposal showing what's included. Once you approve it, you'll sign and pay to book your design session.
+
+18. Seedling step 4
+Current:
+Within a few business days, you’ll receive your custom mood board, shopping list, setup notes, and simple event-day timeline—plus one follow-up round for clarifications.
+
+Replace with:
+Within a few business days, you'll receive your custom mood board, shopping list, setup notes, and simple event-day timeline, plus one follow-up round for clarifications.
+
+19. About heading line
+Current:
+Host like a Guest.
+
+Replace with:
+Host like a guest.
+
+20. About paragraph 4
+Current:
+If you want someone who takes your event as seriously as you do and knows how to stay calm when things get complicated, I think we'll work well together.
+
+Replace with:
+If you want someone who takes your event seriously and knows how to stay calm when things get complicated, I think we'll work well together.
+
+21. Three value lines under About
+Current:
+DETAILS DONE QUIETLY
+YOUR STYLE, NOT MINE
+REAL OVER PERFECT
+
+Replace with:
+DETAILS HANDLED WELL
+YOUR STYLE, NOT MINE
+REAL LIFE OVER PERFECT
+
+22. Contact closing paragraph
+Current:
+Ready to start planning? Click below to fill out our inquiry form and we will be in touch within 1-2 business days to schedule your free consultation.
+
+Replace with:
+Ready to start planning? Fill out the inquiry form and we will be in touch within 1 to 2 business days to schedule your free consult.
+
+23. Response note
+Current:
+WE WILL RESPOND WITHIN 1-2 BUSINESS DAYS
+
+Replace with:
+WE WILL RESPOND WITHIN 1 TO 2 BUSINESS DAYS
+
+24. Footer location line
+Current:
+MAGNOLIA • TOMBALL • THE WOODLANDS • SPRING • CYPRESS
+
+Replace with:
+MAGNOLIA AND SURROUNDING AREAS
+
+After editing:
+1. show me the diff
+2. confirm there are no em dashes or en dashes left in visible homepage copy
+3. confirm curly apostrophes in visible homepage copy were replaced with straight apostrophes
+4. restart the app and confirm the build is clean
+5. do not publish until I approve
