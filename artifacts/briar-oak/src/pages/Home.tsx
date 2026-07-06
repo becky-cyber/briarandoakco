@@ -214,7 +214,7 @@ export default function Home() {
             We focus on social events only: birthdays, baby showers, bridal showers, backyard parties, and milestone celebrations in Magnolia and the surrounding areas. No weddings, no corporate work. That keeps my schedule and my attention where they belong.
           </p>
           <p>
-            If you want someone who takes your event seriously and knows how to stay calm when things get complicated, I think we'll work well together.
+            Whether you want full support or just the right pieces to pull it off yourself, I'll help you get there.
           </p>
         </motion.div>
 
