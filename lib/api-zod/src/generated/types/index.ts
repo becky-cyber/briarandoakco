@@ -10,3 +10,5 @@ export * from "./errorResponse";
 export * from "./healthStatus";
 export * from "./inquiryInput";
 export * from "./inquiryResponse";
+export * from "./subscriberInput";
+export * from "./subscriberResponse";

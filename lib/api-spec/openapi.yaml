@@ -11,6 +11,8 @@ tags:
     description: Health operations
   - name: inquiries
     description: Contact form inquiries
+  - name: subscribers
+    description: Mailing list signups
 paths:
   /healthz:
     get:
@@ -43,6 +45,30 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/InquiryResponse"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /subscribers:
+    post:
+      operationId: subscribeToMailingList
+      tags: [subscribers]
+      summary: Join the mailing list
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubscriberInput"
+      responses:
+        "201":
+          description: Subscribed successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SubscriberResponse"
         "400":
           description: Validation error
           content:
@@ -96,3 +122,21 @@ components:
           type: string
       required:
         - error
+    SubscriberInput:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+      required:
+        - email
+    SubscriberResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        message:
+          type: string
+      required:
+        - id
+        - message

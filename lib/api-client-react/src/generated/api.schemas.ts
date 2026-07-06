@@ -26,3 +26,12 @@ export interface InquiryResponse {
 export interface ErrorResponse {
   error: string;
 }
+
+export interface SubscriberInput {
+  email: string;
+}
+
+export interface SubscriberResponse {
+  id: number;
+  message: string;
+}

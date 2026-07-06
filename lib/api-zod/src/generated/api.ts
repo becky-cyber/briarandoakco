@@ -26,3 +26,10 @@ export const SubmitInquiryBody = zod.object({
   guestCount: zod.string().optional(),
   vibe: zod.string().optional(),
 });
+
+/**
+ * @summary Join the mailing list
+ */
+export const SubscribeToMailingListBody = zod.object({
+  email: zod.string().email(),
+});

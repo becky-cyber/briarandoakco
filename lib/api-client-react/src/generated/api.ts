@@ -21,6 +21,8 @@ import type {
   HealthStatus,
   InquiryInput,
   InquiryResponse,
+  SubscriberInput,
+  SubscriberResponse,
 } from "./api.schemas";
 
 import { customFetch } from "../custom-fetch";
@@ -192,4 +194,90 @@ export const useSubmitInquiry = <
   TContext
 > => {
   return useMutation(getSubmitInquiryMutationOptions(options));
+};
+
+/**
+ * @summary Join the mailing list
+ */
+export const getSubscribeToMailingListUrl = () => {
+  return `/api/subscribers`;
+};
+
+export const subscribeToMailingList = async (
+  subscriberInput: SubscriberInput,
+  options?: RequestInit,
+): Promise<SubscriberResponse> => {
+  return customFetch<SubscriberResponse>(getSubscribeToMailingListUrl(), {
+    ...options,
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...options?.headers },
+    body: JSON.stringify(subscriberInput),
+  });
+};
+
+export const getSubscribeToMailingListMutationOptions = <
+  TError = ErrorType<ErrorResponse>,
+  TContext = unknown,
+>(options?: {
+  mutation?: UseMutationOptions<
+    Awaited<ReturnType<typeof subscribeToMailingList>>,
+    TError,
+    { data: BodyType<SubscriberInput> },
+    TContext
+  >;
+  request?: SecondParameter<typeof customFetch>;
+}): UseMutationOptions<
+  Awaited<ReturnType<typeof subscribeToMailingList>>,
+  TError,
+  { data: BodyType<SubscriberInput> },
+  TContext
+> => {
+  const mutationKey = ["subscribeToMailingList"];
+  const { mutation: mutationOptions, request: requestOptions } = options
+    ? options.mutation &&
+      "mutationKey" in options.mutation &&
+      options.mutation.mutationKey
+      ? options
+      : { ...options, mutation: { ...options.mutation, mutationKey } }
+    : { mutation: { mutationKey }, request: undefined };
+
+  const mutationFn: MutationFunction<
+    Awaited<ReturnType<typeof subscribeToMailingList>>,
+    { data: BodyType<SubscriberInput> }
+  > = (props) => {
+    const { data } = props ?? {};
+
+    return subscribeToMailingList(data, requestOptions);
+  };
+
+  return { mutationFn, ...mutationOptions };
+};
+
+export type SubscribeToMailingListMutationResult = NonNullable<
+  Awaited<ReturnType<typeof subscribeToMailingList>>
+>;
+export type SubscribeToMailingListMutationBody = BodyType<SubscriberInput>;
+export type SubscribeToMailingListMutationError = ErrorType<ErrorResponse>;
+
+/**
+ * @summary Join the mailing list
+ */
+export const useSubscribeToMailingList = <
+  TError = ErrorType<ErrorResponse>,
+  TContext = unknown,
+>(options?: {
+  mutation?: UseMutationOptions<
+    Awaited<ReturnType<typeof subscribeToMailingList>>,
+    TError,
+    { data: BodyType<SubscriberInput> },
+    TContext
+  >;
+  request?: SecondParameter<typeof customFetch>;
+}): UseMutationResult<
+  Awaited<ReturnType<typeof subscribeToMailingList>>,
+  TError,
+  { data: BodyType<SubscriberInput> },
+  TContext
+> => {
+  return useMutation(getSubscribeToMailingListMutationOptions(options));
 };

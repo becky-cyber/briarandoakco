@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 export function Navigation() {
@@ -50,24 +50,14 @@ export function Navigation() {
             About
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#services" onClick={scrollTo("services")} className="hover:text-accent transition-colors duration-200 relative group">
-            Packages
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="#contact" onClick={scrollTo("contact")} className="hover:text-accent transition-colors duration-200 relative group">
-            Contact
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-          </a>
         </div>
 
-        <a
-          href="https://briarandoakco.hbportal.co/public/69c4489698c3e1003040eea1"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={scrollTo("mailing-list")}
           className="bg-accent text-accent-foreground px-6 py-2.5 rounded-sm hover:bg-primary hover:-translate-y-0.5 transition-all duration-300 text-sm font-bold uppercase tracking-widest shadow-md hover:shadow-lg"
         >
-          Let's Talk
-        </a>
+          Join the List
+        </button>
       </div>
     </motion.nav>
   );

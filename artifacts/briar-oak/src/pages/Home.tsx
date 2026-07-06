@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Navigation } from "@/components/Navigation";
-import { ContactForm } from "@/components/ContactForm";
+import { MailingListForm } from "@/components/MailingListForm";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -63,9 +63,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-primary text-5xl md:text-7xl lg:text-8xl font-serif font-semibold leading-[1.1] mb-8"
           >
-            Your celebration, <br />
+            Something new is <br />
             <span className="italic font-light text-primary/90">
-              handled start to finish.
+              growing at Briar & Oak.
             </span>
           </motion.h1>
 
@@ -75,33 +75,32 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-foreground/80 text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed font-light"
           >
-            Briar & Oak Co. is an event planning company based in Magnolia,
-            Texas. We plan birthdays, baby showers, bridal showers, backyard
-            parties, and milestone celebrations for families in Magnolia and
-            surrounding areas. No weddings. No corporate events. Just parties
-            worth celebrating.
+            We're reworking things behind the scenes to bring you two ways to
+            celebrate: full event planning for the moments that deserve it,
+            and a new lineup of easy, pick-up-and-go party rentals for the
+            ones that don't need a whole production. Same local,
+            community-rooted care. A little more flexibility for however you
+            want to host.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="text-secondary text-base md:text-lg mb-8 font-medium"
+          >
+            Want to be the first to know when we open the doors? Join our
+            mailing list below.
           </motion.p>
 
           <motion.div
+            id="mailing-list"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row justify-center gap-5"
+            className="max-w-lg mx-auto scroll-mt-24"
           >
-            <button
-              onClick={scrollTo("services")}
-              className="border border-primary text-primary px-8 py-3.5 hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-semibold tracking-wide text-sm uppercase rounded-sm"
-            >
-              Explore Packages
-            </button>
-            <a
-              href="https://briarandoakco.hbportal.co/public/69c4489698c3e1003040eea1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-8 py-3.5 hover:bg-primary/90 hover:shadow-lg transition-all duration-300 font-semibold tracking-wide text-sm uppercase rounded-sm hover:-translate-y-0.5"
-            >
-              Book a Free Consult
-            </a>
+            <MailingListForm />
           </motion.div>
         </div>
       </main>
@@ -161,230 +160,6 @@ export default function Home() {
               alt="Warm candid gathering" 
               className="w-full h-full object-cover shadow-xl relative z-10"
             />
-          </motion.div>
-        </div>
-      </section>
-      {/* Services Section */}
-      <section id="services" className="bg-muted/30 py-24 md:py-32 px-6">
-        <div className="max-w-7xl mx-auto">
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp}
-            className="text-center mb-16 md:mb-24"
-          >
-            <h2 className="text-primary text-4xl md:text-5xl font-serif font-semibold mb-6">
-              What We Offer
-            </h2>
-            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed">
-              Two options depending on how much help you want. One is full planning with day-of support. The other is a design session and game plan you can run with yourself.
-            </p>
-            <p className="mt-6 text-sm text-secondary font-bold uppercase tracking-widest">
-              All bookings require a 50% non-refundable retainer
-            </p>
-          </motion.div>
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 items-start mb-16 md:mb-20">
-            {/* The Briar - primary package */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-background p-8 lg:p-10 flex flex-col h-full relative border-2 border-primary shadow-xl lg:-translate-y-2"
-            >
-              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-[.2em] px-4 py-1.5 shadow-sm whitespace-nowrap">
-                Signature Service
-              </div>
-              <span className="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-3">
-                Full Planning + Event Day Support
-              </span>
-              <h3 className="text-primary text-3xl font-serif mb-2">
-                The Briar
-              </h3>
-              <p className="text-2xl font-serif text-accent mb-6 italic">
-                Starting at $1,500
-              </p>
-              <p className="text-sm text-foreground/80 leading-relaxed mb-8">
-                The Briar is the right pick if you want someone to handle the planning from start to finish and show up on event day to run things. You focus on your guests. We take care of everything else.
-              </p>
-              <ul className="text-sm space-y-4 mb-8 flex-grow text-foreground/80">
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A kickoff planning session to talk through your vision, priorities, and event details</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A custom design and styling plan with mood board and sourcing guidance</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">Coordination for up to 3 key vendors</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A detailed event timeline and plan for the day</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">One site walkthrough before the event</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">Up to 6 hours of onsite event direction</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">Light styling of key event spaces, including guest tables, bar, and welcome area</span>
-                </li>
-              </ul>
-              <p className="text-sm italic mb-4 text-foreground/60 border-t border-border pt-4">
-                Best for gatherings where you want real help and a clear plan from start to finish.
-              </p>
-              <p className="text-xs leading-relaxed text-foreground/60 mb-8">
-                Onsite coverage includes overseeing setup, guiding vendors, styling final details, and staying through the beginning of your event until everything is running smoothly. If you need support beyond that, such as dinner service, toasts, cake cutting, or teardown, extended coverage can be added for an additional fee.
-              </p>
-              <button
-                onClick={scrollTo("contact")}
-                className="block w-full text-center py-4 text-xs font-bold uppercase tracking-[0.2em] bg-accent text-accent-foreground hover:bg-primary transition-all duration-300"
-              >
-                Inquire About The Briar
-              </button>
-            </motion.div>
-            {/* The Seedling - planning only */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-background p-8 lg:p-10 flex flex-col h-full border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-            >
-              <span className="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-3">
-                Design Session + Game Plan
-              </span>
-              <h3 className="text-primary text-3xl font-serif mb-2">
-                The Seedling
-              </h3>
-              <p className="text-2xl font-serif text-accent mb-6 italic">
-                Flat fee starting around $400 to $600
-              </p>
-              <p className="text-sm text-foreground/80 leading-relaxed mb-8">
-                The Seedling is for hosts who want a solid plan and a clear vision but prefer to handle the setup and execution themselves. We meet, map it out, and hand you a plan you can actually use.
-              </p>
-              <ul className="text-sm space-y-4 mb-8 flex-grow text-foreground/80">
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A 60 to 90 minute planning and design session</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A custom mood board and design direction for your space</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A curated shopping list and sourcing suggestions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A simple layout and setup guide</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">A basic host-facing timeline for event day</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-0.5">•</span>
-                  <span className="leading-snug">One follow-up round for clarifications</span>
-                </li>
-              </ul>
-              <p className="text-sm italic mb-8 text-foreground/60 border-t border-border pt-4">
-                A good fit for DIY hosts who want expert guidance without full planning support.
-              </p>
-              <button
-                onClick={scrollTo("contact")}
-                className="block w-full text-center py-4 text-xs font-bold uppercase tracking-[0.2em] bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
-              >
-                Book a Design Session
-              </button>
-            </motion.div>
-          </div>
-          {/* How It Works */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className="bg-background border border-border p-8 md:p-12"
-          >
-            <motion.div variants={fadeUp} className="text-center mb-12">
-              <h3 className="text-primary text-3xl md:text-4xl font-serif font-semibold mb-4">
-                How It Works
-              </h3>
-              <p className="text-foreground/75 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                Every project starts with a free consult. From there, we move into the level of support that fits your event best.
-              </p>
-            </motion.div>
-            <div className="grid md:grid-cols-2 gap-10 md:gap-12">
-              {/* Briar process */}
-              <motion.div variants={fadeUp}>
-                <p className="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-4">
-                  The Briar
-                </p>
-                <h4 className="text-primary text-2xl font-serif mb-6">
-                  Signature Planning Process
-                </h4>
-                <div className="space-y-6">
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 1</p>
-                    <p className="text-foreground/85 leading-relaxed">Start with a free consult so we can talk through your event, your space, your guest count, and the kind of support you want.</p>
-                  </div>
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 2</p>
-                    <p className="text-foreground/85 leading-relaxed">Receive a proposal with your recommended scope, pricing, and next steps. If it feels like the right fit, you'll sign your contract and submit your retainer to reserve your date.</p>
-                  </div>
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 3</p>
-                    <p className="text-foreground/85 leading-relaxed">We get to work. Design direction, vendor sourcing, logistics, and all the back-and-forth that comes with planning a real event.</p>
-                  </div>
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 4</p>
-                    <p className="text-foreground/85 leading-relaxed">On event day, I'm onsite to oversee setup, guide vendors, style final details, and help everything start smoothly so you can enjoy hosting.</p>
-                  </div>
-                </div>
-              </motion.div>
-              {/* Seedling process */}
-              <motion.div variants={fadeUp}>
-                <p className="text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-4">
-                  The Seedling
-                </p>
-                <h4 className="text-primary text-2xl font-serif mb-6">
-                  Design Session Process
-                </h4>
-                <div className="space-y-6">
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 1</p>
-                    <p className="text-foreground/85 leading-relaxed">We start with a free call to talk through your event and make sure The Seedling is the right fit.</p>
-                  </div>
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 2</p>
-                    <p className="text-foreground/85 leading-relaxed">I'll send a flat-fee proposal showing what's included. Once you approve it, you'll sign and pay to book your design session.</p>
-                  </div>
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 3</p>
-                    <p className="text-foreground/85 leading-relaxed">We meet for 60 to 90 minutes to go over your space, layout, style, and setup priorities.</p>
-                  </div>
-                  <div className="border-l-2 border-accent pl-5">
-                    <p className="text-xs uppercase tracking-[0.18em] text-secondary font-bold mb-2">Step 4</p>
-                    <p className="text-foreground/85 leading-relaxed">Within a few business days, you'll receive your custom mood board, shopping list, setup notes, and simple event-day timeline, plus one follow-up round for clarifications.</p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-            <motion.div variants={fadeUp} className="text-center mt-12 pt-10 border-t border-border">
-              <p className="text-sm text-foreground/70 leading-relaxed max-w-2xl mx-auto">
-                Not sure which service is right for you? Reach out and we'll talk through your guest count, space, style, and goals to find the best fit.
-              </p>
-            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -463,67 +238,6 @@ export default function Home() {
               <span className="w-1.5 h-1.5 bg-accent rounded-full"></span> Real
               Life Over Perfect
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section
-        id="contact"
-        className="bg-primary text-primary-foreground py-24 md:py-32 px-6"
-      >
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            <motion.h2
-              variants={fadeUp}
-              className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold mb-6 leading-tight"
-            >
-              Ready to get{" "}
-              <span className="italic text-accent">started?</span>
-            </motion.h2>
-            <motion.p
-              variants={fadeUp}
-              className="text-primary-foreground/80 text-lg mb-12 font-light leading-relaxed max-w-md"
-            >
-              Fill out the form and we'll be in touch within 1 to
-              2 business days to set up a free call.
-            </motion.p>
-
-            <div className="space-y-8">
-              {[
-                { step: "1", text: "Submit your inquiry" },
-                { step: "2", text: "Hear back within 1 to 2 business days" },
-                { step: "3", text: "Free consult call to talk through your event" },
-                { step: "4", text: "Sign and pay your retainer to hold your date" },
-              ].map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  variants={fadeUp}
-                  className="flex items-center gap-5 group"
-                >
-                  <div className="w-10 h-10 rounded-full border border-accent/50 group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center text-sm font-serif transition-all duration-300">
-                    {item.step}
-                  </div>
-                  <p className="text-base tracking-wide font-light">
-                    {item.text}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <ContactForm />
           </motion.div>
         </div>
       </section>

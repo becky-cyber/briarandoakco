@@ -1,0 +1,1 @@
+- [Briar & Oak site architecture](briar-oak-architecture.md) — single-page app with anchor sections, not routed pages; know this before any nav/page-hiding work.
