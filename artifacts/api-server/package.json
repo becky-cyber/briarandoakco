@@ -10,6 +10,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@workspace/api-zod": "workspace:*",
     "@workspace/db": "workspace:*",
     "cookie-parser": "^1.4.7",
